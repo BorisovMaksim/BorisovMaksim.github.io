@@ -4,7 +4,9 @@ date: 2024-05-08 12:34:00 +0400
 
 categories: [study]
 tags: [deep_learning]     # TAG names should always be 
-math: true
+
+mathjax: true
+toc: true
 ---
 
 The challenge is to model long sequential data. The possible approaches are:
