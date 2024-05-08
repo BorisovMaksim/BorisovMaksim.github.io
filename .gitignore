@@ -1,21 +1,10 @@
-# Bundler cache
-.bundle
-vendor
-Gemfile.lock
-
-# Jekyll cache
-.jekyll-cache
-_site
-
-# RubyGems
-*.gem
-
-# NPM dependencies
-node_modules
-package-lock.json
-
-# IDE configurations
-.idea
-
-# Misc
-assets/js/dist
+.DS_Store
+assets/images/.DS_Store
+_jupyter/.DS_Store
+.ipynb_checkpoints
+__pycache__/
+_jupyter/data/
+_jupyter/.data/
+_jupyter/tagger/
+_posts/.obsidian/
+venv/
