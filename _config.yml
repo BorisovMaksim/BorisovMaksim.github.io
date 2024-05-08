@@ -71,7 +71,7 @@ plugins:
 author:
   name: "Maksim Borisov"
   avatar: "/assets/images/ava_3.jpg"
-  bio: "Machine Learning Researcher. \nLove rock climbing."
+  bio: "Machine Learning Researcher. Love rock climbing."
   location: "Saint Petersburg, Russia"
   links:
     - label: "Email"
