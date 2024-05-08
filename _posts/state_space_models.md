@@ -25,6 +25,7 @@ Neural Rough Differential Equations for Long Time Series [1].
 > Then $Z: [a, b] \rightarrow \mathbb{R}^w$ is defined as the unique solution to the *controlled differential equation*:   
 > $Z_a = \xi$, $Z_t = Z_a  + \int_{a}^{t} f(Z_s) \dot{X_s}ds$ for $t \in (a, b]$
 
+
 Using $\dot{X_s}$ causes the solution to depend continuously on the evolution of $X$. We say that
 the solution is *driven by the control X*.
 
