@@ -1,6 +1,7 @@
 ---
 title: State Space Models
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
+date: 2024-05-08 12:34:00 +0400 
+
 categories: [study]
 tags: [deep_learning]     # TAG names should always be 
 math: true
