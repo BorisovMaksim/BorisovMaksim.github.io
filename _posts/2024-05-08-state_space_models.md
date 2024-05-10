@@ -1,5 +1,5 @@
 ---
-title: Neural ODE
+title: State Space Models
 date: 2024-05-10 12:34:00 +0400 
 
 categories: [study]
@@ -20,12 +20,11 @@ from classical state space models (Kalman 1960).
 #  State Space Models: A Continuous-time Latent State Model
 
 > **Definition (SSM)**:   
-> $~~~~$ $u(t) \in \mathbb{R}$ - input signal   
-> $~~~~$ $x(t) \in \mathbb{R}^N$ - latent state    
-> $~~~~$ $y(t) \in \mathbb{R}$ - output signal    
+> $~~~~ u(t) \in \mathbb{R}$ - input signal   
+> $~~~~ x(t) \in \mathbb{R}^N$ - latent state    
+> $~~~~ y(t) \in \mathbb{R}$ - output signal    
 > Than the State Space Model with parameters $\textbf{A, B, C, D}$ is defined as:
-> $$
-\begin{equation}
+> $$\begin{equation}
 \begin{cases}
 x^{'}(t) = \textbf{A}(t)x(t) + \textbf{B}(t)u(t) \\
 y(t) = \textbf{C}(t)x(t)  + \textbf{D}(t)u(t)
