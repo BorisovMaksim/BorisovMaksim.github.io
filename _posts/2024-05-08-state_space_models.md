@@ -20,7 +20,8 @@ from classical state space models (Kalman 1960).
 #  State Space Models: A Continuous-time Latent State Model
 
 > **Definition (SSM)**:   
-> Let $~ u(t) \in \mathbb{R}$ - input signal   
+> Let:   
+> $~~~~~~~~ u(t) \in \mathbb{R}$ - input signal   
 > $~~~~~~~~ x(t) \in \mathbb{R}^N$ - latent state    
 > $~~~~~~~~ y(t) \in \mathbb{R}$ - output signal    
 > Than the State Space Model with parameters $\textbf{A, B, C, D}$ is defined as:
@@ -40,6 +41,7 @@ $$
 
 > **Proposition(The Convolutional Representation)**    
 > If we assume that  $\textbf{A, B, C, D}$ doesn't depend on time, than:
+>    
 > $$ \begin{cases}
 x^{'}(t) = \textbf{A}(t)x(t) + \textbf{B}(t)u(t) \\
 y(t) = \textbf{C}(t)x(t)  + \textbf{D}(t)u(t) \\
@@ -114,12 +116,15 @@ $$ y(t) = \textbf{C} \left[x_0 \cdot e^{\textbf{A}t} + \int_{0}^t e^{\textbf{A}(
 It is now possible to express the output $y(t)$ as the convolution of two functions. To see this, suppose that $\textbf{D}=0$, such that the equation above simplifies to
 
 $$ y(t) =  \textbf{C}x_0 \cdot e^{\textbf{A}t} + \int_{0}^t e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda  $$
+
 Next, suppose that $x_0=0$, such that:
 
 $$ y(t) =  \textbf{C}\int_{0}^t e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda  $$
 
 if $u(\lambda) \neq 0$ when $t \in [0, t]$ and $u(\lambda) = 0$ otherwise, then: 
+
 $$ y(t) =  \int_{0}^t \textbf{C}e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda = (\textbf{C}  e^{\textbf{A}(t)} \textbf{B} ) * u(t) = K(t) * u(t)$$
+
  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\square$
 
 > **Remark:**    
