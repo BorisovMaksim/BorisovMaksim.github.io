@@ -20,10 +20,11 @@ from classical state space models (Kalman 1960).
 #  State Space Models: A Continuous-time Latent State Model
 
 > **Definition (SSM)**:   
-> Let $~~~~ u(t) \in \mathbb{R}$ - input signal   
-> $~~~~~~~~~~ x(t) \in \mathbb{R}^N$ - latent state    
-> $~~~~~~~~~~ y(t) \in \mathbb{R}$ - output signal    
+> Let $~ u(t) \in \mathbb{R}$ - input signal   
+> $~~~~~~~~ x(t) \in \mathbb{R}^N$ - latent state    
+> $~~~~~~~~ y(t) \in \mathbb{R}$ - output signal    
 > Than the State Space Model with parameters $\textbf{A, B, C, D}$ is defined as:
+>     
 > $$\begin{equation}
 \begin{cases}
 x^{'}(t) = \textbf{A}(t)x(t) + \textbf{B}(t)u(t) \\
