@@ -125,7 +125,7 @@ We now have an exact expression for $x(t)$. We can now substitute this expressio
 $$
 \begin{cases}
 y(t) = \textbf{C}x(t)   \\ 
-x(t) = x_0 \cdot e^{\textbf{A}}t + \int_{0}^t e^{\textbf{A}}(t - \lambda)\textbf{B}u(\lambda) \, \text{d}\lambda
+x(t) = x_0 \cdot e^{\textbf{A}t} + \int_{0}^t e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda
 \end{cases}
 $$
 
