@@ -237,7 +237,7 @@ So, indeed $\overline{ \textbf{A}} = \left(I + \frac{\Delta}{2} \textbf{A}\right
 
  $$\overline{ \textbf{B}} =  \textbf{A}^{-1}( e^{A\Delta} - I) \textbf{B} = $$
  $$= \textbf{A}^{-1}\left(\left(I + \frac{\Delta}{2} \textbf{A}\right)\left(I -\frac{\Delta}{2} \textbf{A}\right)^{-1} - I\right) \textbf{B} = $$
-
+  
   $$= \textbf{A}^{-1}\left(I -\frac{\Delta}{2} \textbf{A}\right)^{-1}\left(\left(I + \frac{\Delta}{2} \textbf{A}\right) - \left(I -\frac{\Delta}{2} \textbf{A}\right) \right) \textbf{B} = $$
   
   $$= \textbf{A}^{-1}\left(I -\frac{\Delta}{2} A\right)^{-1}\textbf{A} \Delta  \textbf{B} = $$
