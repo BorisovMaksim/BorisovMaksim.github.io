@@ -49,7 +49,7 @@ $$
 <details>
   <summary> Proof </summary>
 
-The proof was inspired by this [source](https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit).
+The proof was inspired by this [source][1]
 
 Let's assume that $\textbf{A, B, C}$ are time-invariant. Then
 
@@ -250,4 +250,11 @@ $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 > **Definition (OSSM)**:   
 > We call an SSM $(\textbf{A}(t), \textbf{B}(t))$ an $\textbf{orthoganal SSM (OSSM)}$ for the basis $p_n(t, s)$ and measure $\omega(t, s) > 0$ if the functions $K_n (t, s) = p_n(t,s)\omega(t,s)$ satisfy, at all times $t$,
 > 
-> $$x_n(t) = \int_{-\infty}^{t} K_n (t, s) u(s)ds ~~~~~~~ \int_{-\infty}^{t} p_n(t, s)\omega(t, s) = \delta_{n,m}$$
+> $$x_n(t) = \int_{-\infty}^{t} K_n (t, s) u(s)ds ~~~~~~~~~~~~~~~ \int_{-\infty}^{t} p_n(t, s)\omega(t, s) = \delta_{n,m}$$
+>In the case of a $\textbf{}$
+
+
+# References
+
+[1]: https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit
+[2]: https://en.wikipedia.org/wiki/Discretization
