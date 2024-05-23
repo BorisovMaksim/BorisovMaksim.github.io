@@ -47,9 +47,10 @@ $$
 $$
 
 <details>
-  <summary><a  href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit  
-">Proof</a></summary>
+  <summary> Proof </summary>
 
+  The proof was inspired by this <a  href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit  
+">source</a>
 
 Let's assume that $\textbf{A, B, C}$ are time-invariant. Then
 
@@ -109,8 +110,11 @@ y(t) = (K * u)(t)
 $$
 
 <details>
-  <summary><a  href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit  
-">Proof</a></summary>
+  <summary> Proof </summary>
+
+The proof was inspired by this <a   href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit  
+">source</a>
+
 Using Lemma 1: 
 
 $$
@@ -189,7 +193,12 @@ y_{k+1} =  \overline{\textbf{C}} x_{k+1}
 \end{equation}$$
 
 <details>
-  <summary><a  href="https://en.wikipedia.org/wiki/Discretization">Proof</a></summary>
+  <summary>Proof</summary>
+
+
+  The proof was inspired by this 
+  <a   href="https://en.wikipedia.org/wiki/Discretization">source</a>
+
   By Lemma 1 we have: 
 
   $$ x(t) = x(0) \cdot e^{\textbf{A}}t + \int_{0}^t e^{\textbf{A}}(t - \lambda)\textbf{B}u(\lambda) \, \text{d}\lambda 
@@ -239,3 +248,6 @@ So, indeed $\overline{ \textbf{A}} = \left(I + \frac{\Delta}{2} \textbf{A}\right
 $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\square$
 
 </details>
+
+## HiPPO: High-order Polynomial Projection Operator
+
