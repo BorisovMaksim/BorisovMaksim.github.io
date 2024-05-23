@@ -168,6 +168,7 @@ to a convolution makes TSSMs parallelizable and very fast to compute.
 > Here $\textbf{e}^{\intercal} $ is the one-hot basis vector 
 
 This definition is motivated by noting that the SSM convolutional kernel is a linear combination of the SSM basis controlled by the vector of coefficients $\textbf{C}$
+
 $$K(t) = \sum_{n=0}^{N-1} \textbf{C}_n K_n(t)$$
 
 ## **Discrete-time SSM: The Recurrent Representatioт**
@@ -197,12 +198,12 @@ Discretization:
 
 $$x_k := x(k\Delta)$$
 
- $$ x_k= \orange{x(0) \cdot e^{\textbf{A}k \Delta} + \int_{0}^{k\Delta} e^{\textbf{A}(k\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda} 
+ $$ x_k= \color{orange}{x(0) \cdot e^{\textbf{A}k \Delta} + \int_{0}^{k\Delta} e^{\textbf{A}(k\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda} 
 $$
 
  $$ x_{k+1} = x(0) \cdot e^{\textbf{A}(k+1)\Delta} + \int_{0}^{(k+1)\Delta} e^{\textbf{A}((k+1)\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda =
 $$
-$$  =  e^{\textbf{A}\Delta} \left[ \orange{x(0) \cdot e^{\textbf{A}k\Delta} + \int_{0}^{k\Delta} e^{\textbf{A}(k\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda }\right]  + \int_{k\Delta}^{(k+1)\Delta} e^{\textbf{A}((k + 1)\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda =
+$$  =  e^{\textbf{A}\Delta} \left[ \color{orange}{x(0) \cdot e^{\textbf{A}k\Delta} + \int_{0}^{k\Delta} e^{\textbf{A}(k\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda } \right]  + \int_{k\Delta}^{(k+1)\Delta} e^{\textbf{A}((k + 1)\Delta - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda =
 $$
 
 Next, we change variables in the integral and assume that $u$ is constant during the integral, so $u(\lambda) = u_k$:
