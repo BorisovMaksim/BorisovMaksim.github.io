@@ -200,9 +200,9 @@ y_{k+1} =  \overline{\textbf{C}} x_{k+1}
 
   The proof was inspired by this 
   <a   href="https://en.wikipedia.org/wiki/Discretization">source</a>
-
-  By Lemma 1 we have: 
   
+  
+  By Lemma 1 we have: 
 
   $$ x(t) = x(0) \cdot e^{\textbf{A}}t + \int_{0}^t e^{\textbf{A}}(t - \lambda)\textbf{B}u(\lambda) \, \text{d}\lambda 
 $$
