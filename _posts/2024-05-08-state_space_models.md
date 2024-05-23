@@ -49,7 +49,9 @@ $$
 <details>
   <summary> Proof </summary>
 
-<p>The proof was inspired by this <a href=https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit>source</a></p> 
+  The proof was inspired by this <a href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit">
+    source
+</a>
 
 
 Let's assume that $\textbf{A, B, C}$ are time-invariant. Then
@@ -112,8 +114,9 @@ $$
 <details>
   <summary> Proof </summary>
 
-
-<p>The proof was inspired by this <a href=https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit>source</a><p/>  
+The proof was inspired by this <a href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit">
+    source
+</a>
 
 
 Using Lemma 1: 
@@ -196,7 +199,9 @@ y_{k+1} =  \overline{\textbf{C}} x_{k+1}
 <details>
   <summary>Proof</summary>
 
-<p>The proof was inspired by this <a href=https://en.wikipedia.org/wiki/Discretization>source</a></p> 
+The proof was inspired by this <a href="https://en.wikipedia.org/wiki/Discretization">
+    source
+</a>
 
 
   
