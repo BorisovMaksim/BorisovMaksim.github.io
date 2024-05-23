@@ -3,7 +3,7 @@ title: State Space Models
 date: 2024-05-10 12:34:00 +0400 
 
 categories: [study]
-tags: [deep_learning, in_progress]     # TAG names should always be 
+tags: [deep learning, state space model, SSM]     # TAG names should always be 
 
 mathjax: true
 toc: true
