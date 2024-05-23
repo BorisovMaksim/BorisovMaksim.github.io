@@ -114,7 +114,7 @@ $$
 <details>
   <summary> Proof </summary>
 
-The proof was inspired by this <a href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit">
+> The proof was inspired by this <a href="https://dsp.stackexchange.com/questions/23988/why-is-the-output-of-an-lti-system-expressed-as-the-convolution-of-the-input-wit">
     source
 </a>
 
@@ -199,7 +199,7 @@ y_{k+1} =  \overline{\textbf{C}} x_{k+1}
 <details>
   <summary>Proof</summary>
 
-The proof was inspired by this <a href="https://en.wikipedia.org/wiki/Discretization">
+> The proof was inspired by this <a href="https://en.wikipedia.org/wiki/Discretization">
     source
 </a>
 
