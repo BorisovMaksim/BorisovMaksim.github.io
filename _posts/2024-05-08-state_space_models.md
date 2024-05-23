@@ -42,6 +42,7 @@ $$
 
 > **Lemma 1**    
 >  If we assume that  $\textbf{A, B, C}$ doesn't depend on time, than $x(t)$ has a form of 
+>
 > $$ x(t) = x(0) \cdot e^{\textbf{A}}t + \int_{0}^t e^{\textbf{A}}(t - \lambda)\textbf{B}u(\lambda) \, \text{d}\lambda 
 $$
 
@@ -61,7 +62,7 @@ $$e^{-\textbf{A}t}\frac{dx}{dt}(t) - e^{-\textbf{A}t}\textbf{A}x(t) = e^{-\textb
 If we let $p(t) = x(t)$ and $v(t) = e^{-\textbf{A}t}$, then
 
 $$
-\frac{d}{dt}(p(t) \cdot v(t)) =  e^{-\textbf{A}}t\textbf{B}u(t) 
+\frac{d}{dt}(p(t) \cdot v(t)) =  e^{-\textbf{A}t}\textbf{B}u(t) 
 $$
 
 Substituting $p$ and $v$: 
@@ -82,13 +83,10 @@ Multiplying by $e^{\textbf{A}t}$:
 
 $$x(t)  =  x(\tau) \cdot e^{\textbf{A}(t - \tau )} + \int_{\tau}^{t} e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda)d\lambda $$
 
-Out of interest, note that
 
-$$x(t) = \underbrace{x(\tau) \cdot e^{\textbf{A}(t - \tau)}}_{\text{complementary function}} + \underbrace{\int_{\tau}^t e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda}_{\text{particular integral}}$$
+For $\tau=0$ we get
 
-Unfortunately, this expression for $x(t)$ is still ambiguous, as we have not yet specified a value for $\tau$. We do this using an initial condition. For example, suppose we know that $x(\tau)=0$ for $\tau=0$. Then, we can substitute $\tau=0$ into the equation above to get
-
-$$x(t) = x(0) \cdot e^{\textbf{A}}t + \int_{0}^t e^{\textbf{A}}(t - \lambda)\textbf{B}u(\lambda) \, \text{d}\lambda
+$$x(t) = x(0) \cdot e^{\textbf{A}t} + \int_{0}^t e^{\textbf{A}(t - \lambda)}\textbf{B}u(\lambda) \, \text{d}\lambda
 $$
  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\square$
 
